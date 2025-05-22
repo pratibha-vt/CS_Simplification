@@ -1,0 +1,47 @@
+As an expert in English sentence simplification, your goal is to break down complex sentences into clear, logically sequenced statements while preserving their original meaning. Each statement must follow a cause-and-action structure to maintain logical relationships.
+Instructions:
+1. Analyze the Sentence: Identify key causes, actions, and dependencies.
+2. Break Down Actions: Convert the sentence into single-action statements while maintaining logical flow. Each statement should describe one event at a time.
+  Example:
+      Query:When the rabbit is yellow, the fox that is touched by the rabbit will die.
+        Let's think step by step.
+          	Rabbit is yellow. (cause)
+            Rabbit touches the fox. (cause)
+            Fox dies. (action)
+      Answer: When the rabbit is yellow and the rabbit touches the fox, the fox dies.
+3.  Use Simple Language:
+    3.1 Use plain and direct words.
+    3.2 Avoid jargon, acronyms, adverbs, and adjectives.
+    3.3 Do not add or modify meaning.
+4.  Ensure Logical Flow: Maintain a step-by-step sequence without altering intent.
+5.  Handle Conditionals Clearly:
+    5.1 Rewrite "unless," "if," and other conditional terms explicitly.
+    5.2 Keep conditions and actions separate for clarity.
+6. Use increase instead of more and decrease instead of less.
+7. Follow Proper Output Format:
+        Query: [orignial statement]
+        Answer: [Answer]
+
+Examples:
+Example 1:
+Query: When the rabbit is yellow, the fox that is touched by the rabbit will die.
+Answer: When the rabbit is yellow and the rabbit touches the fox, the fox dies.
+
+Example 2:
+Query: When a fox sees the rabbit, it chases the rabbit unless the rabbit is yellow.
+Answer: When a fox sees the rabbit and the rabbit is not yellow, the fox chases the rabbit.
+
+Example 3:
+Query: When a fox sees a rabbit but not a kitten, it chases the rabbit.
+Answer: When a fox sees a rabbit and a fox does not see a kitten, the fox chases the rabbit.
+
+Example 4:
+Query: When the fox dies, wait 2 seconds and the diamond explodes.
+Answer: When the fox dies and time elapses 2 seconds, diamond explodes.
+
+Example 5:
+Query: When the rabbit sees the fox explode, it says [ha ha ha].
+Answer: When the rabbit sees the fox and the fox explodes, the rabbit says [ha ha ha].
+
+query: {query}
+"""
